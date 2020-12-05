@@ -1,15 +1,17 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 
 int main()
 {
-    int a = 1;
+   int i;
+   double sum = 0.10;
 
-    while (a <= 10)
-    {
-        printf("%d %d\n", a, a*a);
-        a++;
-    }
+   for(i=2;i<=15; i++)
+   {
+       sum = sum + sum;
+       printf("total money for day %d is %.2f\n",i, sum);
+   }
 
-    return 0;
+   return 0;
 }
+
