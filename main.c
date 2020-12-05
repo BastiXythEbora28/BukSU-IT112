@@ -1,24 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
 
 int main()
 {
-   int angle1, angle2, angle3, sum;
+    int a = 1;
 
-
-    printf("Enter three angles of triangle: \n");
-    scanf("%d%d%d", &angle1, &angle2, &angle3);
-
-
-    sum = angle1 + angle2 + angle3;
-
-    if(sum == 180 && angle1 > 0 && angle2 > 0 && angle3 > 0)
+    while (a <= 10)
     {
-        printf("Triangle is valid.");
-    }
-    else
-    {
-        printf("Triangle is not valid.");
+        printf("%d %d\n", a, a*a);
+        a++;
     }
 
     return 0;
